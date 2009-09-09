@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{53087BDB-D58B-4694-B283-F2436AAA4A98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtemisWest.Demos.Calculator", "src\ArtemisWest.Demos.Calculator\ArtemisWest.Demos.Calculator.csproj", "{F5F77E4C-81F0-48B3-84C4-E54D4A1D0BE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtemisWest.Demos.Calculator.Tests", "test\ArtemisWest.Demos.Calculator.Tests\ArtemisWest.Demos.Calculator.Tests.csproj", "{D4FDE91D-CB65-4401-853E-EC59AD10CFE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtemisWest.Demos.CalculatorClient", "src\ArtemisWest.Demos.CalculatorClient\ArtemisWest.Demos.CalculatorClient.csproj", "{B483EA99-10B3-421C-9434-73BD48D51185}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtemisWest.Demos.CalculatorClientTest", "test\ArtemisWest.Demos.CalculatorClientTest\ArtemisWest.Demos.CalculatorClientTest.csproj", "{BE3511E1-54BD-467A-9BDE-B23D86E7BE5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SystemTests", "SystemTests", "{5A4E64A7-F596-4537-B785-C1702C5A6610}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{7016DF49-2225-464D-B1E7-7A2BAE542519}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtemisWest.Demos.CalculatorClientGUITest", "test\ArtemisWest.Demos.CalculatorClientGUITest\ArtemisWest.Demos.CalculatorClientGUITest.csproj", "{136359A9-A3C4-4AC9-B181-F9F5DDE0B810}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5F77E4C-81F0-48B3-84C4-E54D4A1D0BE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F77E4C-81F0-48B3-84C4-E54D4A1D0BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F77E4C-81F0-48B3-84C4-E54D4A1D0BE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F77E4C-81F0-48B3-84C4-E54D4A1D0BE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4FDE91D-CB65-4401-853E-EC59AD10CFE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4FDE91D-CB65-4401-853E-EC59AD10CFE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4FDE91D-CB65-4401-853E-EC59AD10CFE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4FDE91D-CB65-4401-853E-EC59AD10CFE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B483EA99-10B3-421C-9434-73BD48D51185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B483EA99-10B3-421C-9434-73BD48D51185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B483EA99-10B3-421C-9434-73BD48D51185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B483EA99-10B3-421C-9434-73BD48D51185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE3511E1-54BD-467A-9BDE-B23D86E7BE5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE3511E1-54BD-467A-9BDE-B23D86E7BE5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE3511E1-54BD-467A-9BDE-B23D86E7BE5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE3511E1-54BD-467A-9BDE-B23D86E7BE5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{136359A9-A3C4-4AC9-B181-F9F5DDE0B810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{136359A9-A3C4-4AC9-B181-F9F5DDE0B810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{136359A9-A3C4-4AC9-B181-F9F5DDE0B810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{136359A9-A3C4-4AC9-B181-F9F5DDE0B810}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5A4E64A7-F596-4537-B785-C1702C5A6610} = {53087BDB-D58B-4694-B283-F2436AAA4A98}
+		{7016DF49-2225-464D-B1E7-7A2BAE542519} = {53087BDB-D58B-4694-B283-F2436AAA4A98}
+		{136359A9-A3C4-4AC9-B181-F9F5DDE0B810} = {5A4E64A7-F596-4537-B785-C1702C5A6610}
+		{D4FDE91D-CB65-4401-853E-EC59AD10CFE2} = {7016DF49-2225-464D-B1E7-7A2BAE542519}
+		{BE3511E1-54BD-467A-9BDE-B23D86E7BE5E} = {7016DF49-2225-464D-B1E7-7A2BAE542519}
+	EndGlobalSection
+EndGlobal

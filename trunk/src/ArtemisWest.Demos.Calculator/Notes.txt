@@ -1,0 +1,31 @@
+﻿I like the way the WPF Calculator works, but I dont like the code.
+	The window has all the logic
+	The window knows about what buttons do what eg AddToDisplay is getting unwieldy
+	
+	
+
+Final result should be a zipped folder structure with some batch files
+	build.bat		--Just builds the application tot he Build/Bin directory. ECHOs the output program location to run.
+	UnitTests.bat	--Builds and runs the unit tests with NUnit?
+	AllTests.bat	--Builds and runs Unit and System/White tests
+	FullDeploy.bat	--Builds in release mode
+	
+	
+==========================================================================
+Requirements
+==========================================================================
+
+Mobile Development Coding Dojo
+The objective of this exercise is to build a WPF calculator that allows a user to perform mathematical operations on supplied inputs. Valid calculator operations are:
+•	Addition 
+•	Multiplication 
+•	Division 
+•	Subtraction 
+•	Reset calculator 
+•	Show the current mathematical expression 
+•	Show the result of the mathematical expression 
+•	Provide basic scientific functions such as sin(x), cos(x) tanh(x). 
+ 
+Calculations will be performed on real numbers and it should be possible to reuse these operations in a non-WPF application being developed for the call centre. The application should maintain a log of any exceptions raised in normal operation for analysis by the support desk.
+ 
+We are looking for evidence of WPF MVVM experience, TDD, Abstraction, Polymorphism, OOAD, LSP, Law of Demeter, proper and effective use of patterns and general software engineering best practices. The developer will be expected to defend their design rationale. Candidates must provide a download link for their source code using the code hosting platform: http://code.google.com . Paper entries will not be accepted. 

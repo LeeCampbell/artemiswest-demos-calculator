@@ -1,0 +1,67 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:vm="clr-namespace:ArtemisWest.Demos.CalculatorClient.Calculator"
+                    xmlns:c="clr-namespace:ArtemisWest.Demos.CalculatorClient.Controls">
+  <DataTemplate DataType="{x:Type vm:CalculatorViewModel}">
+    <DataTemplate.Resources>
+      <Style TargetType="Button"
+             BasedOn="{StaticResource {x:Type Button}}">
+        <Setter Property="Width"
+                Value="30" />
+        <Setter Property="Height"
+                Value="30" />
+      </Style>
+    </DataTemplate.Resources>
+    <DockPanel>
+      <DockPanel DockPanel.Dock="Top">
+        <Button x:Name="ResetButton"
+                Command="{Binding ResetCommand}"
+                IsCancel="True"
+                DockPanel.Dock="Right">C</Button>
+        <Button x:Name="EqualsButton"
+                Command="{Binding EqualsCommand}"
+                IsDefault="True"
+                DockPanel.Dock="Right">=</Button>
+
+        <TextBox x:Name="ValueText"
+                 TextAlignment="Right">
+          <TextBox.Text>
+            <Binding Path="Value"
+                     UpdateSourceTrigger="PropertyChanged">
+              <Binding.ValidationRules>
+                <c:DoubleValidationRule />
+              </Binding.ValidationRules>
+            </Binding>
+          </TextBox.Text>
+        </TextBox>
+
+      </DockPanel>
+      <StackPanel DockPanel.Dock="Top"
+                  HorizontalAlignment="Right"
+                  Orientation="Horizontal">
+        <Button x:Name="AddButton"
+                Command="{Binding AddCommand}">+</Button>
+        <Button x:Name="SubtractButton"
+                Command="{Binding SubtractCommand}">-</Button>
+        <Button x:Name="MultiplyButton"
+                Command="{Binding MultiplyCommand}">x</Button>
+        <Button x:Name="DivideButton"
+                Command="{Binding DivideCommand}">/</Button>
+      </StackPanel>
+      <StackPanel DockPanel.Dock="Top"
+                  HorizontalAlignment="Right"
+                  Orientation="Horizontal">
+        <Button x:Name="SinButton"
+                Command="{Binding SinCommand}">sin(x)</Button>
+        <Button x:Name="CosButton"
+                Command="{Binding CosCommand}">cos(x)</Button>
+        <Button x:Name="TanButton"
+                Command="{Binding TanCommand}">tan(x)</Button>
+      </StackPanel>
+      <TextBox x:Name="ExpressionText"
+               Text="{Binding Expression, Mode=OneWay}"
+               TextWrapping="Wrap"
+               IsReadOnly="True"/>
+    </DockPanel>
+  </DataTemplate>
+</ResourceDictionary>
